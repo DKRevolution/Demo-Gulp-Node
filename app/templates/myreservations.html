@@ -1,0 +1,82 @@
+ <div class="parent-container" ng-controller="reservationsCtrl">
+		 <div class="banner-container">
+			<div>
+			  <carousel interval="myInterval">
+				<slide ng-repeat="slide in slides" active="slide.active">
+				  <img ng-src="{{slide.image}}">
+				</slide>
+			  </carousel>
+			</div>
+		</div>
+		<div class="middle-container container">
+		    <div class="container reservation-container">
+				<h5>Reservations</h5>
+				<form name="reserv-form" class="form-inline">
+				 <div class="form-group">
+					<label class="sr-only" for="name">Full Name</label>
+					<input type="text" ng-model="name" class="form-control" name="name" placeholder="Name" unique="name" required>
+					<span ng-show="reserv-form.name.$error.unique">Name should not contains numbers and special characters</span>
+					<small class="error" ng-show="reserv-form.name.$error.required">Please input a username</small>
+				  </div>
+				  <div class="form-group">
+					<label class="sr-only" for="exampleInputEmail3">Email address</label>
+					<input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email" required>
+				  </div>
+				  			  
+				  <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+						<input type="text" id="startDate" name="startDate" calendar ng-model="startDate" class="form-control" placeholder="mm/dd/yyyy" ng-minlength="10"></input>
+				  </div>
+				  <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+						<input type="text" id="toDate"  name="toDate" calendar ng-model="toDate" class="form-control" placeholder="mm/dd/yyyy" ng-minlength="10"></input>
+				  </div>
+				  <select class="form-control">
+					  <option>1</option>
+					  <option>2</option>
+					  <option>3</option>
+					  <option>4</option>
+					  <option>5</option>
+					</select>
+					<select class="form-control">
+					  <option>Silver</option>
+					  <option>Gold</option>
+					  <option>Platinum</option>
+					</select>
+				<button type="submit" class="btn btn-primary">Book Now</button>
+				  <div class="checkbox">
+					<label>
+					  <input type="checkbox"><a href="" >Terms & conditions</a>
+					</label>
+				  </div>
+				  
+				</form> 
+			</div>
+			<div class="col-md-12 room-rates">
+					<ul class="">
+						<li>
+							<a href=""><img src="images/center-container/offer1.png"></a>
+							<label>Silver</label><p>Experience the coolness with minimum budget</p>
+							<button type="button" class="btn btn-primary">View more</button>
+						</li>
+						<li>
+							<a href=""><img src="images/center-container/offer2.png"></a>
+							<label>Gold Villa</label><p>Experience the theater thrill</p>
+								<button type="button" class="btn btn-primary">View more</button>
+						</li>						 
+						<li>
+							<a href=""><img src="images/center-container/offer3.png"></a>
+							<label>Platinum Villa</label><p>Enjoy the luxarious with blue warm water</p><button type="button" class="btn btn-primary">View more</button>
+						</li>
+						 <li>
+							<a href=""><img src="images/center-container/offer3.png"></a>
+							<label>Honeymoon Villa</label><p>Feel the love on island with glaceries</p><button type="button" class="btn btn-primary">View more</button>
+						</li>
+						 <li>
+							<a href=""><img src="images/center-container/offer3.png"></a>
+							<label>Festival Villa</label><p>Celebrate festivals with your loveones</p><button type="button" class="btn btn-primary">View more</button>
+						</li>
+					</ul>
+				</div>
+		</div>
+		<!---->
+		
+	</div>

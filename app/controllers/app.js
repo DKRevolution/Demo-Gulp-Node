@@ -1,0 +1,1 @@
+var module = angular.module("myApp", ['ngAnimate','ui.bootstrap','ui.router']);

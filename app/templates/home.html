@@ -1,0 +1,53 @@
+	<div class="parent-container">
+		 <div class="banner-container" ng-controller="homeCtrl">
+			<div>
+			  <carousel interval="myInterval">
+				<slide ng-repeat="slide in slides" active="slide.active">
+				  <img ng-src="{{slide.image}}">
+				</slide>
+			  </carousel>
+			</div>
+		</div>
+		<div class="middle-container">
+			<div class="container offers-container">
+				<div class="col-md-10">
+					<ul class="">
+						<li>
+							<a href=""><img src="images/center-container/offer1.png"></a>
+							<label>Weekend Getaway 25% Discount</label><p> Weekend Getaways 25% Dicount on all Hotel Services except Alcohol, tobacco, SPA & Sunday Brunch</p>
+							<button type="button" class="btn btn-primary">Book Now</button>
+						</li>
+						<li>
+							<a href=""><img src="images/center-container/offer2.png"></a>
+							<label>Long Stay Offer </label><p> Hyatt Regency Pune offers a Long Stay package, that caters to your business and leisure needs.</p>
+								<button type="button" class="btn btn-primary">Book Now</button>
+						</li>						 
+						<li>
+							<a href=""><img src="images/center-container/offer3.png"></a>
+							<label>Bring balance back</label><p>  to your life and enjoy your favorite activities.</p><button type="button" class="btn btn-primary">Book Now</button>
+						</li>
+						<li>
+							<a href=""><img src="images/center-container/offer4.png"></a>
+							<label>Double Your Points</label><p>Book the Double Your Points rate and get free nights faster.</p><button type="button" class="btn btn-primary">Book Now</button>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h5>Reservations</h5>
+					<div class="reservations">
+							<label>Arrival Date</label>
+							<div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+									<input type="text" id="startDate" name="startDate" calendar ng-model="startDate" class="form-control" placeholder="mm/dd/yyyy" ng-minlength="10"></input>
+							</div>
+							<label>Departure Date</label>
+							<div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+									<input type="text" id="toDate"  name="toDate" calendar ng-model="toDate" class="form-control" placeholder="mm/dd/yyyy" ng-minlength="10"></input>
+							</div>
+							<button type="button" class="btn btn-primary">Check availablty</button>
+					</div>	
+				</div>
+			</div>
+		</div>
+		<!---->
+		
+	</div>

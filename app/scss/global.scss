@@ -1,0 +1,210 @@
+$theme-color:#46149A;
+$big-background:#767676;
+$padding-micro:5px;
+$padding-small:10px;
+$margin-micro:5px;
+$margin-small:10px;
+$margin-medium:20px;
+$margin-large:30px;
+$font-size-header:30px;
+$header-line-height:32px;
+$white-font: #fff;
+$black-font: #333;
+$border-color:1px solid #ccc;
+
+body{
+ font-family: Lucida Console;
+}
+
+/*Header*/
+.navbar-default{
+	background:$theme-color;
+	margin-bottom:0;
+	border-left:none;
+	border-right:none;
+}
+.navbar{
+	border-radius:0;
+}
+.navbar-brand{
+ font-size: $font-size-header;
+ line-height: $header-line-height;
+ color: $white-font !important;
+}
+
+.link-css{
+	background: $big-background !important;
+	color: $white-font !important;
+
+}
+.navbar-nav{
+  li{
+		 a{
+
+			 &:focus{
+				@extend .link-css;
+			}
+			
+			&:hover{
+				@extend .link-css;
+			}
+		 }
+    }
+
+}
+.navbar-default {
+	.navbar-nav{
+		.active{
+			a{
+				@extend .link-css;
+				&:focus{
+					@extend .link-css;
+				}
+				&:hover{
+					@extend .link-css;
+				}
+			}
+		}
+	}
+} 
+ 
+footer{
+		background:$big-background ;
+		padding: $padding-small;
+		text-align:center;
+		clear:both;
+		margin-top:0;
+		ul li{
+			display:inline; 
+			a {
+				border-right:$border-color;
+				padding:$padding-micro;
+				color:$white-font;						
+			}	
+		}
+		& li:last-child a{
+			border-right:none;
+		}
+}
+.pri-header{
+		background:$big-background ;
+		text-align:right;
+		ul{
+			margin:$margin-micro;
+			margin-right:$margin-large;
+		}
+		ul li{
+			display:inline; 
+			color:$white-font;
+			a {
+				border-right:$border-color;
+				padding:$padding-micro;
+				color:$white-font;						
+			}	
+		}
+		& li:last-child a{
+			border-right:none;
+		}
+}
+.parent-container{
+	position:relative;
+	min-height:630px;
+	clear:both;
+}
+.carousel-indicators{
+	width:37%;
+	left:92%;
+}
+.banner-container img{
+  margin:auto;
+  width: 95%;
+  height:300px !important;
+}
+
+.middle-container{
+
+	.offers-container{
+		border:$border-color;
+		background: #fff;
+		z-index:1000;
+		position:absolute;
+		top:40%;
+		left:6.5%;
+		
+	}
+	ul{
+		padding-left:0;
+	}
+	ul li{
+			display:inline-block; 
+			vertical-align:top;
+			width:193px;
+			min-height:300px;
+			
+			a {
+				padding:$padding-micro;					
+			}
+			img {
+				width:200px;
+				margin:$margin-small 0;
+			}
+		}
+}
+
+.full button span {
+    background-color: limegreen;
+    border-radius: 32px;
+    color: black;
+  }
+  .partially button span {
+    background-color: orange;
+    border-radius: 32px;
+    color: black;
+  }
+  
+ #ui-datepicker-div{z-index:1000 !important}
+ .input-group{margin-bottom:10px;}
+ h5{font-size:20px;font-weight:bold;background:#ccc;padding:5px}
+ .middle-container ul{
+	border-right:1px solid #ccc;
+	li{
+		margin-right:20px;
+	}
+ }
+ 
+ .subpage-container{
+	@extend .parent-container;
+	min-height:140px;
+	position:absolute;
+	top:30%;
+	left:8%;
+	width:84%;
+	border:$border-color;
+	z-index:500;
+	background:#fff;
+ }
+ .subpage-main-top-container{
+	min-height:300px;
+ }
+ .subpage-main-bottom-container{
+	background:$theme-color;
+	min-height:300px;
+ }
+ .carousel-indicators {
+    bottom: 45px;
+}
+.room-rates{
+    margin-top:60px;
+	border:$border-color;
+	 margin-bottom:30px;
+	ul {
+	  border-right:none;
+	 li{
+	   min-height:260px;
+	   
+	 }
+	}
+}
+.reservation-container{
+ @extend .subpage-container
+}

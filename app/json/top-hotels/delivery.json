@@ -1,0 +1,104 @@
+[
+"delivery"
+    {
+        "name": "Picantos Mexican Grill",
+		"stuff":"Pocket Friendly",
+        "address": "Aundh › 1st Floor, Darpan Apartment, Opposite Bank of Maharashtra",
+		"QuickBt":"Mexican, Tex-Mex",
+		"Cost":"Rs. 450",
+		"id":"01",
+		"foodType":"Veg-NonVeg",
+		"foodId":"100"
+    },
+
+    {
+        "name": "Cafe Goodluck",
+		"stuff":"Legendary, Great Breakfasts, Student Faves",
+        "address": "Deccan Gymkhana › 759/75, Goodluck Chowk, Deccan Gymkhana, Pune",
+        "QuickBt": "Casual Dining › North Indian, Fast Food",
+		"Cost":"Rs. 400",
+		"id":"02",
+		"foodType":"Veg Only",
+		"foodId":"101"
+    },
+    {
+        "name": "The Burger Barn Cafe",
+		"stuff":"Student Faves",
+        "address": "Koregaon Park › 393, Sanas Corner, Lane 5, Off South Main Road, pune",
+        "QuickBt": "› Cafe, American, Fast Food",
+		"Cost":"Rs.  650",
+		"id":"03",
+		"foodType":"Veg-NonVeg"
+    },
+    {
+        "name": "Chaitanya Paranthas",
+		"stuff":"Veggie Friendly, Student Faves",
+        "address": "FC Road › Next to Subway, Tukaram Paduka Chowk, FC Road, Pune",
+        "QuickBt": "Casual Dining › North Indian, Chinese",
+		"Cost":"Rs.  350",
+		"id":"04",
+		"foodType":"Veg-NonVeg",
+		"foodId":"101"
+    },
+    {
+       "name": "Arthur's Theme",
+	   "stuff":"Meat Cravings, European & Mediterranean, Valentine's Day Specials",
+        "address": "Koregaon Park › 2, Vrindavan Apartment, Lane 6, Off North Main Road, Pune",
+        "QuickBt": "Casual Dining › European, Italian",
+		"Cost":"Rs. 1000",
+		"id":"05",
+		"foodType":"Veg-NonVeg",
+		"foodId":"100"
+    },
+	{
+       "name": "Mezza 9",
+	   "stuff":"Romantic, Outdoor Seating, Late Night Eats, Sumptuous Sizzlers, European & Mediterranean, Valentine's Day Specials",
+        "address": "Hinjewadi › Opposite KPIT Cummins, RGPV IT Park, Phase 1",
+        "QuickBt": "Casual Dining › Continental, North Indian, Mughlai, Asian, Chinese, Italian, Mexican",
+		"Cost":"Rs. 1200",
+		"id":"06",
+		"foodType":"Veg-NonVeg",
+		"foodId":"100"
+    },
+	{
+       "name": "Malaka Spice",
+	   "stuff":"Outdoor Seating, Pan-Asian Delicacies, Valentine's Day Specials",
+        "address": "Koregaon Park › Lane 5, Oxford Properties, Off North Main Road",
+        "QuickBt": "Casual Dining › Malaysian, Thai, Vietnamese, Japanese, Korean, Asian",
+		"Cost":"Rs. 2000",
+		"id":"07",
+		"foodType":"Veg Only",
+		"foodId":"101"
+    },
+	{
+       "name": "Taareef",
+	   "stuff":"Brilliant Biryanis",
+        "address": "Aundh › 1, Shyamal Apartments, Next to Ozone, ITI Road, Aundh, Pune",
+        "QuickBt": "Casual Dining › Biryani, North Indian, Seafood, Mughlai",
+		"Cost":"Rs. 1500",
+		"id":"08",
+		"foodType":" NonVeg Only",
+		"foodId":"102"
+    },
+	{
+		
+       "name": "Copa Cabana",
+	   "stuff":"Romantic, Outdoor Seating, Sumptuous Sizzlers, Valentine's Day Specials",
+        "address": "Wakad › Next To Orange County, Wakad Road, Vishal Nagar",
+        "QuickBt": "Casual Dining › Chinese, Continental, Japanese, Mexican, Italian, North Indian, Finger Food",
+		"Cost":"Rs. 1700",
+		"id":"09",
+		"foodType":"Veg-NonVeg",
+		"foodId":"100"
+    },
+	{
+       "name": "George Restaurant",
+	   "stuff":"Legendary, Brilliant Biryanis",
+        "address": "East Street › 2436, East Street, Camp, Pune",
+        "QuickBt": "Casual Dining › North Indian, Mughlai, Chinese, Fast Food, Biryani, Parsi",
+		"Cost":"Rs. 800",
+		"id":"09",
+		"foodType":"NonVeg Only"
+		"foodId":"102"
+    }
+]
